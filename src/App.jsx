@@ -1,15 +1,18 @@
 
 
-import './App.css'
-import Navigation from './components/Navigation/Navigation'
+import './main.scss';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
 
   return (
     <>
-    <Navigation />
+    <Navigation/>
     <main>
-    
+    <div className="app">
+<p>salut</p>
+
+    </div>
     </main>
     </>
   )
