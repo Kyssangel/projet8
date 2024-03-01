@@ -1,7 +1,7 @@
-
+import { Outlet } from 'react-router-dom';
+import Navigation from './components/Navigation/Navigation';
 
 import './main.scss';
-import Navigation from './components/Navigation/Navigation';
 
 function App() {
 
@@ -9,10 +9,7 @@ function App() {
     <>
     <Navigation/>
     <main>
-    <div className="app">
-<p>salut</p>
-
-    </div>
+      <Outlet />
     </main>
     </>
   )
