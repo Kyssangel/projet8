@@ -1,11 +1,11 @@
 import {  NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/logo-red.svg'
+import logo from'../../assets/images/logo-red.svg'
 
 
 export default function Navigation() {
     return  (
         <header className='header'>
-            <img src={Logo} alt="logo Kyra"/>
+            <img src={logo} alt="logo Kyra"/>
             <nav>
                 <ul>
                     <li><NavLink to='/'>acceuil</NavLink></li>

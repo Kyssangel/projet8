@@ -1,11 +1,11 @@
-
+import falaise from'../assets/images/falaise.svg'
 
 export default function Home() {
     return (
         <div className="home">
             <div className="banner">
-            <img src="/src/assets/images/background-home" alt="Image d'une falaise" />
-            <h1>Ceci, est la page accueil !</h1>
+            <img src={falaise} alt="Image d'une falaise" />
+            <h1>Chez vous, partout et ailleurs</h1>
             </div>
         </div>
     )
