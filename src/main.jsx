@@ -6,6 +6,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
+import Thumb from '../public/logements.json'
+
 
 const router = createBrowserRouter([
   {
@@ -19,8 +21,15 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />
-      }
-      
+      },
+     {
+      path:'/thumb/:id',
+      element: <Thumb />
+     }
+     /*{
+      path:'logement/:id'
+      element= <Logement />
+     }*/
     ]
   },
 ]);

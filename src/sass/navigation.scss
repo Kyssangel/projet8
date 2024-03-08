@@ -1,7 +1,9 @@
 nav ul li a {
-  color: blue;
+  color: black;
   font-size: 24px;
   text-decoration: none;
+  width: 100%;
+
 }
 
 .header {
@@ -11,7 +13,7 @@ nav ul li a {
   padding: 20px;
   padding-left: 80px;
   padding-right: 80px;
-width: 1260px;
+
   & img {
     width: 200px;
     object-fit: cover;
@@ -20,10 +22,13 @@ width: 1260px;
   & nav ul {
     display: flex;
     gap: 57px;
+
     list-style-type: none;
+ 
 
     & li a.active {
       color: red;
+      
     }
   }
 }

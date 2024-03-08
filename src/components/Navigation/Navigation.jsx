@@ -8,7 +8,7 @@ export default function Navigation() {
             <img src={logo} alt="logo Kyra"/>
             <nav>
                 <ul>
-                    <li><NavLink to='/'>acceuil</NavLink></li>
+                    <li><NavLink to='/'>Acceuil</NavLink></li>
                     <li><NavLink to='/about'>A propos</NavLink></li>
                 </ul>
 

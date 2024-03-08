@@ -1,25 +1,24 @@
-.thumb{
+.thumb {
   position: relative;
   
-    width: 340px;
-    height: 340px;
-    cursor: pointer;
-    border-radius: 10px;
-    img{
-     
-        width: 100%;
-        height: 80%;
-        object-fit: cover;
-    
-    }
+  width: 100%;
+  height: 340px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  img {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+  }
 }
-    h3{
-            position:absolute;
-font-size: 18px;
-font-weight: 700;
-bottom: 23%;
-width: 200px;
-height: 52px;
-color: white;
-left: 10px;
-        }
+h3 {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  bottom: 23%;
+
+  height: 52px;
+  color: white;
+  left: 10px;
+}
