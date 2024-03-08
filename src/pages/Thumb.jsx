@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-
+import {Link} from "react-router-dom";
 
 export default function Thumb ({logements}){
     return(
 logements.map((logement)=>(
-    <div className='thumb' key={logement.id}>
+    <Link to={`/logement/${logement.id}`} className='thumb' key={logement.id}>
     <img src={logement.cover} alt={logement.cover}/>
     <h3>{logement.title}</h3>
-    </div>
+    </Link>
 ))
 
 )}

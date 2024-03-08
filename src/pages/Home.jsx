@@ -2,6 +2,9 @@ import falaise from'../assets/images/falaise.svg';
 import logements from'../../public/logements.json';
 import Thumb from'../pages/Thumb';
 
+
+
+
 export default function Home() {
     return (
         <div className="home">
