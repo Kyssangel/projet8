@@ -16,13 +16,6 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
-      "no-restricted-syntax",
-        "error",
-        {
-          "selector": "OptionalMemberExpression",
-          "message": "Use optional chaining instead."
-        }
-      ]
-    
+    ],
   },
 }

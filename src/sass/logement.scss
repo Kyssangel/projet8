@@ -1,0 +1,63 @@
+
+.logement{
+ padding-left: 80px;
+ padding-right: 80px;
+  
+
+
+    .allDescription{
+      h2{
+       color: #FF6060;
+       padding-top: 20px
+        ;
+      }
+    }
+}
+  p{
+            color: black;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 5px;
+        }
+
+    .pictures{
+      
+    
+       border-radius: 25px;
+  img{
+    position: relative;
+  height: 415px;
+  width:100%;
+    border-radius: 25px;
+     object-fit: cover;
+     font-size: 3rem;
+     display: flex;
+     gap: 30px;
+  }
+  
+}   
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Assurez-vous que les icônes sont au-dessus des images */
+
+
+
+
+}
+div.slick-arrow.slick-next::before {
+  position: absolute;
+  right: 60px;
+
+font-size: 5rem;
+  }
+ div.slick-arrow.slick-prev::before{
+ position:absolute;
+ left: 40px;
+  
+   font-size: 5rem;
+   color: white;
+}
