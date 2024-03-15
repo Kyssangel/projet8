@@ -1,0 +1,16 @@
+
+.logement-collapse {
+    .toggle-btn {
+      cursor: pointer;
+    }
+  
+    .content {
+      display: none;
+      &.open {
+        display: block;
+      }
+      &.close {
+        display: none;
+      }
+    }
+  }

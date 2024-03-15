@@ -1,0 +1,67 @@
+.carousel {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .div-image {
+    position: relative;
+  }
+  
+  .classImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .div-image img {
+    display: block;
+    width: 1220px;
+    object-fit: cover;
+    height:415px ;
+  }
+  
+  .buttons-container {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .buttons-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .classChevronGauche,
+  .classChevronDroit {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .div-compteur {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .compteurImages {
+    font-size: 14px;
+    color: black;
+  }
+  .classChevronDroit{
+    position: relative;
+   bottom:250px;
+   left:450px;
+   width: 96px;
+  height: 119px;
+  }
+  .classChevronGauche{
+    bottom: 250px;
+    right: 450px;
+    width: 96px;
+    height: 119px;
+    position: relative;
+  }
+ 
