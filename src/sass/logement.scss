@@ -2,11 +2,16 @@
  .logement {
   padding-left: 80px;
   padding-right: 80px;
-
+height: 1700px;
   .allDescription {
     h2 {
       color: #ff6060;
       padding-top: 20px;
+      font-size: 26px;
+      width: 635px;
+height: 51px;
+
+
     }
 
     p {
@@ -14,6 +19,8 @@
       font-size: 18px;
       font-weight: 500;
       padding-top: 5px;
+      padding-bottom: 40px;
+      padding-top: 10px;
     }
   }
 
@@ -29,25 +36,5 @@
       font-size: 3rem;
     }
   }
-
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1; /* Assurez-vous que les icônes sont au-dessus des images */
-  }
-
-  div.slick-arrow.slick-next::before {
-    position: absolute;
-    right: 60px;
-    font-size: 5rem;
-  }
-
-  div.slick-arrow.slick-prev::before {
-    position: absolute;
-    left: 40px;
-    font-size: 5rem;
-    color: white;
-  }
-}
+ }
+ 

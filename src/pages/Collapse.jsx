@@ -1,28 +1,41 @@
+
 import { useState } from "react";
 import logementsData from "../../public/logements.json";
+import Vector from "../assets/images/ChevronUp.png";
 
-export default function LogementCollapse  ({id} ) {
-  // Recherche du logement correspondant à l'ID
-  const logement = logementsData.find((item) => item.id === Number(id));
+export default function Collapse({ title, id }) {
+  const [display, setDisplay] = useState("none");
+  const [isActive, setIsActive] = useState("");
+  const [rotate, setRotate] = useState("180deg");
 
-  // Utilisation de useState pour gérer l'état de l'ouverture du collapse
-  const [isOpen, setIsOpen] = useState(false);
+  const logement = logementsData.find((logement) => logement.id === id);
 
-  // Fonction pour basculer l'état du collapse
-  const toggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
+  function inputCollapse() {
+    setIsActive(isActive === "" ? "active" : "");
+    setRotate(rotate === "180deg" ? "0deg" : "180deg");
+    setDisplay(display === "block" ? "none" : "block");
+  }
 
   return (
-    <div className="logement-collapse">
-      <button onClick={toggleCollapse} className="toggle-btn">
-        {isOpen ? "Fermer" : "Ouvrir"}
-      </button>
-      {/* Utilisation de classNames dynamiques pour ouvrir/fermer le contenu */}
-      <div className={`content ${isOpen ? "open" : "close"}`}>
-        <h2>{logement.title}</h2>
+    <div>
+      <div className="collapse-block" onClick={inputCollapse}>
+        <h1 id="title">{title}</h1>
+        <button>
+          <img
+            className="vector"
+            src={Vector}
+            style={{ rotate: `${rotate}` }}
+            alt="chevron"
+          />
+        </button>
+      </div>
+      <div
+        className={`texte ${isActive}`}
+        key={id}
+        style={{ display: `${display}` }}
+      > <h3>Déscription</h3>
         <p>{logement.description}</p>
-        <h3>Équipements</h3>
+       
         <ul>
           {logement.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>
@@ -32,6 +45,4 @@ export default function LogementCollapse  ({id} ) {
     </div>
   );
 }
-
-
 

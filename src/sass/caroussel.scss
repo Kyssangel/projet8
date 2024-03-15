@@ -1,5 +1,5 @@
 .carousel {
-   
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,21 +47,27 @@
   }
   
   .compteurImages {
-    font-size: 14px;
-    color: black;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    bottom: 30%;
   }
   .classChevronDroit{
     position: relative;
    bottom:250px;
    left:450px;
-   width: 96px;
-  height: 119px;
+   width: 40px;
+  height: 70px;
+ 
   }
   .classChevronGauche{
     bottom: 250px;
     right: 450px;
-    width: 96px;
-    height: 119px;
+    width: 40px;
+    height: 70px;
     position: relative;
   }
- 
+ button{
+    background-color: transparent;
+    border: transparent;
+ }
