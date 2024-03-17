@@ -1,66 +1,61 @@
-
 /* collapse.scss */
 
 .collapse-block {
-   display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #ff6060;
+  height: 52px;
+  width: 570px;
+  flex-direction: row;
+  h1 {
+    position: relative;
+    top: -5px;
+    font-size: 25px;
+    color: white;
+  }
+
+  button {
+    background: none;
+    border: none;
     cursor: pointer;
-    margin-bottom: 10px;
-    background-color:#ff6060 ;
-    height: 40px;
-    width: 570px;
-flex-direction: row;
-    h1 {
-      margin: 0;
-      position: relative;
-top: -5px;
-     font-size: 25px;
-     color: black;
+    margin-left: auto; // Aligner le bouton à droite
+  }
+}
+
+.texte {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 570px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style-type: none;
     padding: 0;
-    }
-  
-    button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin-left: auto; // Aligner le bouton à droite
-      
+    margin-top: 5px;
+
+    li {
+      margin-bottom: 5px;
     }
   }
-  
-  .texte {
-    display: none;
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 570px;
-    h3 {
-      margin-top: 0;
-    }
-  
-    p {
-      margin-top: 0;
-    }
-  
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin-top: 5px;
-      
-      li {
-        margin-bottom: 5px;
-      }
-    }
-  }
-  
-  .active {
-    display: block;
-  }
-  
-  .vector {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-   
-  }
-  
-  
+}
+
+.active {
+  display: block;
+}
+
+.vector {
+  width: 24px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  margin-right: 15px;
+}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import logementsData from "../../public/logements.json";
 import Vector from "../assets/images/ChevronUp.png";
 
-export default function LogementPage({ id }) {
+export default function LogementPage( {id} ) {
   const [displayDescription, setDisplayDescription] = useState("none");
   const [isActiveDescription, setIsActiveDescription] = useState("");
   const [rotateDescription, setRotateDescription] = useState("180deg");

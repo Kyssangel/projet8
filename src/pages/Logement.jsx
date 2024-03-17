@@ -1,31 +1,9 @@
 
-/*import { useParams } from "react-router-dom";
-import logements from "../../public/logements.json";
-import Carousel from "./Caroussel"; // Importez le composant Carousel depuis son emplacement
-
-export default function Logement() {
-  const { id } = useParams();
-  const logement = logements.find((logement) => logement.id === id);
-
-  if (!logement) {
-    return <div>Logement introuvable</div>;
-  }
-
-  return (
-    <div className="logement">
-      <Carousel logementId={id} /> 
-      <div className="allDescription">
-        <h2>{logement.title}</h2>
-        <p>{logement.location}</p>
-      </div>
-    </div>
-  );
-}*/
-import { useState } from "react";
+import Rating from "./Rating"; // Importez le composant Rating
 import { useParams } from "react-router-dom";
 import logementsData from "../../public/logements.json";
 import Carousel from "./Caroussel";
-import Collapse from "./Collapse"; // Import du composant Collapse
+import Collapse from "./Collapse";
 
 export default function Logement() {
   const { id } = useParams();
@@ -37,12 +15,14 @@ export default function Logement() {
 
   return (
     <div className="logement">
-      <Carousel logementId={id} /> {/* Affichage du Carousel */}
+      <Carousel logementId={id} />
       <div className="allDescription">
         <h2>{logement.title}</h2>
         <p>{logement.location}</p>
-        <Collapse title="Description" id={id} /> {/* Ajout du Collapse pour la description */}
-        <Collapse title="Équipements" id={id} /> {/* Ajout du Collapse pour les équipements */}
+        <Rating rating={logement.rating} />
+        <Collapse title="Description" id={id} />
+        <Collapse title="Équipements" id={id} />
+       
       </div>
     </div>
   );
