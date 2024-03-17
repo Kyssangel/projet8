@@ -12,7 +12,8 @@
   h1 {
     position: relative;
     top: -5px;
-    font-size: 25px;
+    left: 30px;
+    font-size: 22px;
     color: white;
   }
 
@@ -27,8 +28,10 @@
 .texte {
   display: none;
   padding: 10px;
-  border: 1px solid #ccc;
+ font-size: 18px;
   width: 570px;
+  background: #F6F6F673;
+
 
   h3 {
     margin-top: 0;

@@ -1,9 +1,11 @@
 
-import Rating from "./Rating"; // Importez le composant Rating
+import Rating from "./Rating"; 
 import { useParams } from "react-router-dom";
 import logementsData from "../../public/logements.json";
-import Carousel from "./Caroussel";
+import Caroussel from "./Caroussel";
 import Collapse from "./Collapse";
+import Host from "./Host";
+import Tags from "./Tags";
 
 export default function Logement() {
   const { id } = useParams();
@@ -15,13 +17,15 @@ export default function Logement() {
 
   return (
     <div className="logement">
-      <Carousel logementId={id} />
+      <Caroussel logementId={id} />
       <div className="allDescription">
         <h2>{logement.title}</h2>
         <p>{logement.location}</p>
+        <Tags tags={logement.tags}/>
+        <Host host={logement.host}/>
         <Rating rating={logement.rating} />
-        <Collapse title="Description" id={id} />
-        <Collapse title="Équipements" id={id} />
+        <Collapse title="Rating" id={id} />
+      
        
       </div>
     </div>

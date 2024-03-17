@@ -4,12 +4,13 @@
 import redstar from "../assets/images/redStar.png";
 import greystar from "../assets/images/greyStar.png";
 
-const Rating = ({ rating }) => {
+
+    const Rating = ({ rating }) => {
   const stars = [1, 2, 3, 4, 5];
 
   return (
     <div className="rating">
-      {/* Loop to display star by rating */}
+     
       {stars.map((star) =>
         rating >= star ? (
           <img
@@ -29,6 +30,6 @@ const Rating = ({ rating }) => {
       )}
     </div>
   );
-};
+}
 
-export default Rating;
+export default Rating ;
