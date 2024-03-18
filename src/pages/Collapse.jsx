@@ -26,8 +26,9 @@ export default function LogementPage( {id} ) {
   }
 
   return (
+    <div className="block">
     <div>
-      {/* Section Description */}
+     
       <div className="collapse-block" onClick={toggleDescription}>
         <h1>Description</h1>
         <button>
@@ -42,9 +43,9 @@ export default function LogementPage( {id} ) {
       <div className={`texte ${isActiveDescription}`} key={`${id}-description`} style={{ display: `${displayDescription}` }}>
         <p>{logement.description}</p>
       </div>
-
-      {/* Section Equipements */}
-      <div className="collapse-block" onClick={toggleEquipements}>
+      </div>
+<div className="block2">
+      <div className="collapse-block-equipement" onClick={toggleEquipements}>
         <h1>Equipements</h1>
         <button>
           <img
@@ -55,13 +56,15 @@ export default function LogementPage( {id} ) {
           />
         </button>
       </div>
-      <div className={`texte ${isActiveEquipements}`} key={`${id}-equipements`} style={{ display: `${displayEquipements}` }}>
+      <div className={`texte2 ${isActiveEquipements}`} key={`${id}-equipements`} style={{ display: `${displayEquipements}` }}>
         <ul>
           {logement.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>
           ))}
         </ul>
       </div>
+      </div>
     </div>
+
   );
 }
