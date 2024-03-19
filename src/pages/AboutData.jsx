@@ -20,15 +20,9 @@ const AboutTable = () => {
 
   return (
     <div className="about-table">
+     
       <div className="category">
-        <h2 onClick={() => toggleCollapse("slogan")}>Slogan</h2>
-        {!collapsedSections["slogan"] && <p>{aboutData.slogan}</p>}
-        <button onClick={() => toggleCollapse("slogan")}>
-          <img  src={Vector} alt="chevron" style={{ transform: collapsedSections["slogan"] ? "rotate(0deg)" : "rotate(180deg)" }} />
-        </button>
-      </div>
-      <div className="category">
-        <h2 onClick={() => toggleCollapse("fiability")}>Fiability</h2>
+        <h2 onClick={() => toggleCollapse("fiability")}>Fiabilité</h2>
         {!collapsedSections["fiability"] && <p>{aboutData.fiability}</p>}
         <button onClick={() => toggleCollapse("fiability")}>
           <img src={Vector} alt="chevron" style={{ transform: collapsedSections["fiability"] ? "rotate(0deg)" : "rotate(180deg)" }} />
@@ -49,7 +43,7 @@ const AboutTable = () => {
         </button>
       </div>
       <div className="category">
-        <h2 onClick={() => toggleCollapse("security")}>Security</h2>
+        <h2 onClick={() => toggleCollapse("security")}>Securité</h2>
         {!collapsedSections["security"] && <p>{aboutData.security}</p>}
         <button onClick={() => toggleCollapse("security")}>
           <img src={Vector} alt="chevron" style={{ transform: collapsedSections["security"] ? "rotate(0deg)" : "rotate(180deg)" }} />

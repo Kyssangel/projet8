@@ -1,5 +1,5 @@
 .about-table {
-  height: 500px;
+  height: 450px;
   .category {
     padding-top: 20px;
     margin-bottom: 40px;
@@ -22,7 +22,7 @@
     p {
       margin: 0;
       padding-left: 20px;
-      height: 50px;
+      height: 45px;
       background: #f6f6f673;
 
       padding-bottom: 80px;
@@ -46,19 +46,20 @@
   }
 }
 .category {
-  position: relative;
-}
-.category button {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-
-.category button img {
-  transition: transform 0.3s ease;
-}
-
-.collapsed {
-  transform: rotate(180deg);
-}
+    position: relative;
+  }
+  .category button {
+    position: absolute;
+    top: 50%;
+    right:0;
+   
+    transform: translateY(-50%);
+  }
+  
+  .category button img {
+    transition: transform 0.3s ease;
+  }
+  
+  .collapsed {
+    transform: rotate(180deg);
+  }

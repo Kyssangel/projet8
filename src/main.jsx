@@ -8,7 +8,7 @@ import About from "./pages/About.jsx";
 import Home from "./pages/Home.jsx";
 import Thumb from "../public/logements.json";
 import Logement from'./pages/Logement.jsx';
-
+import ErrorComponent from "./pages/ErrorComponent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +32,10 @@ const router = createBrowserRouter([
         path: "/logement/:id",
         element: <Logement />
       },
- 
+ {
+  path:"*",
+  element: <ErrorComponent />
+ },
     ],
   },
 ]);

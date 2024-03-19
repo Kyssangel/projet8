@@ -1,0 +1,42 @@
+.main{
+   
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    
+  
+    .errorNumber {
+      color: #ff6060;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 142.6%;
+     padding-bottom: 30px;
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 142.6%;
+      
+    }
+  
+    .errorText {
+position: relative;
+left: 20px;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 142.6%;
+      color:#ff6060;
+   
+    }
+    .errorBackLink {
+        padding-top: 50px;
+      font-size: 18px;
+      color: black;
+      margin: 42px 0px;
+      padding-bottom: 50px;
+    }
+  }
+  }
