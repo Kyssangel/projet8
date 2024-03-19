@@ -1,17 +1,14 @@
-
- .logement {
+.logement {
   padding-left: 80px;
   padding-right: 80px;
-height: 1700px;
+ 
   .allDescription {
-    h2 {
+    h2.title {
       color: #ff6060;
       padding-top: 20px;
       font-size: 26px;
-      width: 635px;
-height: 51px;
 
-
+      height: 51px;
     }
 
     p {
@@ -36,5 +33,4 @@ height: 51px;
       font-size: 3rem;
     }
   }
- }
- 
+}

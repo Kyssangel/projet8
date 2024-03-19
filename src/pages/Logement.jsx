@@ -6,6 +6,8 @@ import logements from "../../public/logements.json";
 import Caroussel from "./Caroussel";
 import Collapse from "./Collapse";
 import Host from "./Host";
+import Tags from"./Tags";
+
 
 export default function Logement() {
   const { id } = useParams();
@@ -22,9 +24,9 @@ export default function Logement() {
     <div className="logement">
       <Caroussel logementId={id} />
       <div className="allDescription">
-        <h2>{logement.title}</h2>
+        <h2 className="title">{logement.title}</h2>
         <p>{logement.location}</p>
-        
+        <Tags tags={logement.tags} />
         <Host host={logement.host} />
         <Rating rating={logement.rating} />
         <Collapse title="Rating" id={id} />

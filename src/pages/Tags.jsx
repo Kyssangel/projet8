@@ -1,10 +1,13 @@
 
 
-
-const Tags = ({ getTag }) => {
+const Tags = ({ tags }) => {
   return (
-    <div className="tag">
-      <p className="tag__text">{getTag}</p>
+    <div className="tags">
+      {tags.map((tag, index) => (
+        <div key={index} className="tag">
+          <p className="tag__text">{tag}</p>
+        </div>
+      ))}
     </div>
   );
 };

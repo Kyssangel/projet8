@@ -1,4 +1,8 @@
+.block2{
+  padding-bottom: 30px;
+}
 .block {
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -66,7 +70,7 @@ div.collapse-block {
   display: none;
   padding: 10px;
   font-size: 18px;
-  width: 570px;
+  width:95%;
   background: #f6f6f673;
 
   h3 {
@@ -97,4 +101,14 @@ div.collapse-block {
   height: 20px;
   transition: transform 0.3s ease;
   margin-right: 15px;
+}
+@keyframes show-up {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

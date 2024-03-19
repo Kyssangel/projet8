@@ -4,11 +4,22 @@
     justify-content: flex-end;
   position: relative;
   bottom: 110px;
-    // Style pour la sous-classe .host__name
-    &__name {
-      font-size: 12px;
-      font-weight: 500;
-      margin-right: 10px;
+
+  
+  p.fullname{
+    padding: 0;
+color:#ff6060 ;
+flex-direction: column;
+
+ 
+  }
+.host__name{
+  position:relative;
+ 
+ top: 10px;
+  width: 50px;
+
+}
   
       // Style spécifique pour la taille d'écran medium
       @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -22,20 +33,17 @@
       @media only screen and (min-width: 901px) {
         font-size: 18px;
       }
-    }
+    
   
-    // Style pour les éléments <p> à l'intérieur de .host__name
-    &__name p {
-      margin: 0;
-      text-align: end;
-    }
+  
+   
   
     // Style pour la sous-classe .host__picture
     &__picture {
       border-radius: 50%;
       height: 32px;
       width: 32px;
-  
+  padding: 5px;
       // Style spécifique pour la taille d'écran medium
       @media only screen and (min-width: 601px) and (max-width: 900px) {
         height: 48px;
@@ -49,4 +57,4 @@
       }
     }
   }
-  
+ 
