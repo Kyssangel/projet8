@@ -14,47 +14,18 @@ flex-direction: column;
  
   }
 .host__name{
-  position:relative;
- 
- top: 10px;
-  width: 50px;
+
+  width:70px;
 
 }
   
-      // Style spécifique pour la taille d'écran medium
-      @media only screen and (min-width: 601px) and (max-width: 900px) {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-  
-      // Style spécifique pour la taille d'écran large
-      @media only screen and (min-width: 901px) {
-        font-size: 18px;
-      }
-    
-  
-  
+   &__picture {
    
-  
-    // Style pour la sous-classe .host__picture
-    &__picture {
       border-radius: 50%;
-      height: 32px;
-      width: 32px;
-  padding: 5px;
-      // Style spécifique pour la taille d'écran medium
-      @media only screen and (min-width: 601px) and (max-width: 900px) {
-        height: 48px;
-        width: 48px;
-      }
-  
-      // Style spécifique pour la taille d'écran large
-      @media only screen and (min-width: 901px) {
-        height: 64px;
-        width: 64px;
-      }
+      height: 64px;
+      width: 64px;
+
+      
     }
   }
  
