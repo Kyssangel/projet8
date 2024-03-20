@@ -33,3 +33,27 @@ right: 100px;
   bottom: 60px;
   color: white;
 }
+@media only screen and (max-width: 1024px) {
+  .classChevronGauche, .classChevronDroit {
+    top: 50%; /* Centrer verticalement */
+    transform: translateY(-50%);
+  }
+
+  .classChevronGauche {
+    left: 20px; /* Ajuster la position à gauche */
+  }
+
+  .classChevronDroit {
+    right: 20px; /* Ajuster la position à droite */
+  }
+
+  .compteurImages {
+    bottom: 20px; /* Ajuster la position du compteur */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .classImage {
+    height: 300px; /* Ajuster la hauteur de l'image pour les petits écrans */
+  }
+}

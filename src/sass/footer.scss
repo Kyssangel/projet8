@@ -16,3 +16,15 @@
      
   }
 }
+@media only screen and (max-width: 480px){
+  .footer{
+    display: flex;
+    gap: 15px;
+    p{
+     
+      height: 46px;
+      width: 133px;
+      text-align: center;
+    }
+  }
+}

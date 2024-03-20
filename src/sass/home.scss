@@ -41,3 +41,41 @@ gap: 40px;
   border-radius: 25px;
 padding-bottom: 40px;
 }
+@media only screen and (max-width: 768px) {
+  .home .galerie {
+    grid-template-columns: 1fr ; 
+    gap: 30px; 
+   
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home .banner {
+    height: 150px; 
+  }
+
+  .home .banner img {
+    height: 150px; 
+  }
+
+  h1 {
+    font-size: 36px; 
+    top: 25%; 
+    left: 10%; 
+  }
+
+  .home .galerie {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    border-radius: 15px; 
+    grid-template-columns: 1fr ;
+    
+  }
+}
+.home{
+  padding-left: 10px; 
+  padding-right:10px; 
+    img{
+      padding-right: 0;
+    }
+}

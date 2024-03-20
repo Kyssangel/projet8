@@ -6,3 +6,13 @@
     padding-top: 20px;
     
 }
+
+@media only screen and (max-width: 768px) {
+    .rating {
+        left: auto; /* Réinitialiser la position horizontale */
+        width: 100%; /* Occuper toute la largeur */
+        text-align: center; /* Centrer le contenu horizontalement */
+        bottom: auto; /* Réinitialiser la position verticale */
+        padding-top: 10px; /* Réduire l'espace en haut */
+    }
+}

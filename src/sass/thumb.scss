@@ -25,3 +25,13 @@ h3 {
   color: white;
   left: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .thumb {
+    height: 200px; /* Réduire la hauteur pour les appareils plus petits */
+  }
+
+  h3 {
+    font-size: 14px; /* Réduire la taille du titre pour les appareils plus petits */
+    bottom: 2%; /* Ajuster la position verticale pour les appareils plus petits */
+  }
+}

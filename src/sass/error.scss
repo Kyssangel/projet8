@@ -40,3 +40,14 @@ left: 20px;
     }
   }
   }
+
+  @media only screen and (max-width: 768px) {
+    main .error .errorNumber {
+      font-size: 72px; /* Réduire la taille du numéro d'erreur */
+    }
+  
+    main .error .errorText {
+      font-size: 24px; /* Réduire la taille du texte d'erreur */
+      left: 0; /* Réinitialiser la position du texte d'erreur */
+    }
+  }

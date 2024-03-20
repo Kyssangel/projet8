@@ -34,3 +34,21 @@
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .logement {
+    padding-left: 20px; /* Réduire le padding à gauche pour les appareils plus petits */
+    padding-right: 20px; /* Réduire le padding à droite pour les appareils plus petits */
+  }
+
+  .logement .allDescription h2.title {
+    font-size: 24px; /* Réduire la taille du titre pour les appareils plus petits */
+  }
+
+  .logement .allDescription p {
+    font-size: 16px; /* Réduire la taille du texte pour les appareils plus petits */
+  }
+
+  .logement .pictures img {
+    height: 200px; /* Réduire la hauteur des images pour les tablettes et les appareils portables */
+  }
+}

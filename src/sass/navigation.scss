@@ -32,3 +32,31 @@ nav ul li a {
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px; 
+    justify-content: center;
+    
+    img{
+      height: 46px;
+      width: 143px;
+      
+    }
+     nav ul {
+    display: flex;
+   gap: 20px;
+     height: 17px;
+     width: 140px;
+     padding-left: 30px;
+     align-items: center;
+  }
+  }
+
+ 
+
+  nav ul li a {
+    font-size: 12px; 
+  text-align: center;
+  }
+}

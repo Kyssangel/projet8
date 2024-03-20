@@ -119,3 +119,35 @@ div.collapse-block {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .collapse-block-equipement, .collapse-block {
+    height: auto;
+  }
+
+  .collapse-block-equipement h1, .collapse-block h1 {
+    left: 20px;
+  }
+
+  .texte {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .block {
+    grid-template-columns: 1fr;
+  }
+
+  .collapse-block-equipement, .collapse-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .collapse-block-equipement h1, .collapse-block h1 {
+    left: 20px;
+    margin-bottom: 5px;
+  }
+}

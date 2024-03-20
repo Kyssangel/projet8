@@ -19,4 +19,19 @@ font-size: 14px;
    
       }
     
-  
+      @media only screen and (max-width: 768px) {
+          .tags {
+            flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+          }
+        
+          .tags .tag {
+            padding: 5px; /* Réduire l'espacement des tags */
+            margin-right: 5px; /* Ajouter une marge à droite pour l'espace entre les tags */
+            margin-bottom: 5px; /* Ajouter une marge en bas pour l'espace entre les lignes de tags */
+          }
+        
+          .tags p.tag__text {
+            padding: 5px 10px; /* Réduire le padding horizontal des tags */
+            font-size: 12px; /* Réduire la taille de la police des tags */
+          }
+        }
