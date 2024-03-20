@@ -47,7 +47,7 @@ export default function LogementPage( {id} ) {
 <div className="block2">
       <div className="collapse-block-equipement" onClick={toggleEquipements}>
         <h1>Equipements</h1>
-        <button>
+        <button className="button">
           <img
             className="vector"
             src={Vector}
