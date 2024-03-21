@@ -41,33 +41,26 @@
   }
 
   .logement .allDescription h2.title {
-    font-size: 24px; /* Réduire la taille du titre pour les appareils plus petits */
+    font-size: 24px; 
   }
 
   .logement .allDescription p {
-    font-size: 16px; /* Réduire la taille du texte pour les appareils plus petits */
+    font-size: 16px; 
   }
 
   .logement .pictures img {
-    height: 200px; /* Réduire la hauteur des images pour les tablettes et les appareils portables */
+    height: 200px; 
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .logement {
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .logement .allDescription h2.title {
-    position: relative;
-    bottom: 25px;
-    height: 18px;
-    font-size: 18px;
-    padding-top: 0;
+  .logement .allDescription p {
+    font-size: 16px; 
+    padding: 0;
+    padding-top: 20px;
+  }
 
-    .logement .allDescription p {
-      position: relative;
-      bottom: 20px;
-      font-size: 16px;
-      padding-bottom: 20px;
-    }
-  }
 }

@@ -1,13 +1,11 @@
-.block2{
+.block2 {
   padding-bottom: 30px;
- .button{
-  background-color: transparent;
-  border: transparent;
-
- }
+  .button {
+    background-color: transparent;
+    border: transparent;
+  }
 }
 .block {
-  
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -35,14 +33,13 @@ div.collapse-block-equipement {
     top: -5px;
     left: 30px;
     font-size: 22px;
-    color:white;
+    color: white;
     img.vector {
       position: relative;
       width: 24px;
       height: 20px;
       transition: transform 0.3s ease;
       margin-right: 15px;
-      
     }
   }
 }
@@ -57,7 +54,7 @@ div.collapse-block {
 
   h1 {
     position: relative;
-top: 0;
+    top: 0;
     left: 30px;
     font-size: 22px;
     color: white;
@@ -67,8 +64,7 @@ top: 0;
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: auto; 
-   
+    margin-left: auto;
   }
 }
 
@@ -76,7 +72,7 @@ top: 0;
   display: none;
   padding: 10px;
   font-size: 18px;
-  width:95%;
+  width: 95%;
   background: #f6f6f673;
 
   h3 {
@@ -107,7 +103,6 @@ top: 0;
   height: 20px;
   transition: transform 0.3s ease;
   margin-right: 15px;
-
 }
 @keyframes show-up {
   0% {
@@ -120,29 +115,8 @@ top: 0;
   }
 }
 
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .block {
-    grid-template-columns: 1fr;
-  }
-
-  .collapse-block-equipement, .collapse-block {
-    flex-direction: column;
-    align-items: flex-start;
-   text-align: center;
-    
-  }
-
-  .collapse-block-equipement h1, .collapse-block h1 {
-    left: 20px;
-    margin-bottom: 5px;
-  }
-}
-
-
-@media only screen and (min-width: 320px) and (max-width: 480px){
-  .block{
     display: block;
     gap: 0;
     padding-left: 10px;
@@ -151,46 +125,46 @@ top: 0;
     display: flex;
     align-items: center;
     cursor: pointer;
+height: 30px;
+h1{
+  font-size: 13px;
+  top: 0px;
   
-   
-  
-    
+}
     .vector {
-  position: relative;
-bottom: 25px;
-height:14px ;
-width: 16px;
-padding-bottom: 5px;
-left: 170px;
-}
-
+      position: relative;
+     height: 14px;
+      width: 16px;
+      padding-bottom: 5px;
+   
+    }
   }
 
-div.collapse-block {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
- 
-  h1 {
-    position: absolute;
-    top:640px ;
-    left: 12%;
-    font-size: 13px;
-    color: white;
-    height: 30px;
-  }
-.vector{
-  position: relative;
-  height: 9px;
-  width: 16px;
-  right: 5px;
-}
-  button {
-    background: none;
-    border: none;
+  div.collapse-block {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    margin-left: auto; 
-   height: 30px;
+    height: 30px;
+    h1 {
+      position: relative;
+    left: 10%;
+    
+      font-size: 13px;
+      color: white;
+      height: 30px;
+    }
+    .vector {
+      position: relative;
+      height: 9px;
+      width: 16px;
+     
+    }
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+      height: 30px;
+    }
   }
-}
 }

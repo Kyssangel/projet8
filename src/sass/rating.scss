@@ -7,17 +7,11 @@
     
 }
 
-@media only screen and (max-width: 768px) {
-    .rating {
-        left: auto; /* Réinitialiser la position horizontale */
-        width: 100%; /* Occuper toute la largeur */
-        text-align: center; /* Centrer le contenu horizontalement */
-        bottom: auto; /* Réinitialiser la position verticale */
-        padding-top: 10px; /* Réduire l'espace en haut */
-    }
-}
-@media only screen and (max-width: 480px){
-    .rating{
+@media only screen and (min-width: 320px) and (max-width: 480px){
+ div.rating{
+    position: relative;
+   left: 0%;
+   top: 2px;
         padding-top: 0;
         padding-bottom:40px;
         height: 18px;

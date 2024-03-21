@@ -21,23 +21,28 @@ font-size: 14px;
     
       @media only screen and (max-width: 768px) {
           .tags {
-            flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+            flex-wrap: wrap; 
           }
         
           .tags .tag {
-            padding: 5px; /* Réduire l'espacement des tags */
-            margin-right: 5px; /* Ajouter une marge à droite pour l'espace entre les tags */
-            margin-bottom: 5px; /* Ajouter une marge en bas pour l'espace entre les lignes de tags */
+            padding: 5px; 
+            margin-right: 5px; 
+            margin-bottom: 5px; 
           }
         
           .tags p.tag__text {
-            padding: 5px 10px; /* Réduire le padding horizontal des tags */
-            font-size: 12px; /* Réduire la taille de la police des tags */
+            padding: 5px 10px;
+            font-size: 12px; 
           }
         }
         @media only screen and (min-width: 320px) and (max-width: 480px){
           .tags{
-               position: relative;
-               bottom:10px;
-          }
+            position: relative;
+            bottom:10px;
+            
+       }
+       .tags p.tag__text {
+        padding: 5px 10px;
+        font-size: 10px; 
+      }
         }
