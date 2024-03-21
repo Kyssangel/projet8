@@ -53,3 +53,4 @@ const AboutTable = () => {
   );
 };
 export default AboutTable;
+

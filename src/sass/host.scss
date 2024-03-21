@@ -21,15 +21,17 @@
 }
 figure.host{
   position: relative;
-left: 80%;
+left:85%;
   width: 150px;
 bottom: 50px;
 }
-@media only screen and (max-width: 768px) {
-  .host {
+@media only screen and (min-width:480px) and (max-width: 768px) {
+  figure.host {
+    position: relative;
     justify-content: center; 
     text-align: center; 
     bottom: 50px; 
+    left: 70%;
   }
 
   .host .fullname {
@@ -46,6 +48,7 @@ bottom: 50px;
   .host .host__picture {
     margin-right: 10px;
   }
+  
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -53,7 +56,7 @@ bottom: 50px;
     position: relative;
    text-align: center;
     top: 25px;
-    left: 55%;
+    left:60%;
     height: 33px;
     width: 135px;
  

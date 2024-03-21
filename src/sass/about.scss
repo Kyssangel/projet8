@@ -11,3 +11,18 @@ padding-right: 80px;
       border-radius: 25px;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+  .about{
+    padding-left: 10px;
+    padding-right: 10px;
+        img{
+            width: 100%;
+          height: 223px;  
+          object-fit: cover;
+          border-radius: 25px;
+        }
+    }
+
+}

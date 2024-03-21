@@ -43,48 +43,48 @@
       color: white;
       right: 40px;
     }
-    .button{
-   background-color: transparent;
-   border: transparent;
-
+    .button {
+      background-color: transparent;
+      border: transparent;
     }
   }
 }
 .category {
-    position: relative;
+  position: relative;
+}
+.category button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-50%);
+}
+
+.category button img {
+  transition: transform 0.3s ease;
+}
+
+.collapsed {
+  transform: rotate(180deg);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .about-table {
+    height: auto;
   }
-  .category button {
-    position: absolute;
-    top: 50%;
-    right:0;
-   
-    transform: translateY(-50%);
+
+  .category h2 {
+    font-size: 20px;
   }
-  
-  .category button img {
-    transition: transform 0.3s ease;
+
+  .category p {
+    padding-bottom: 60px;
   }
-  
-  .collapsed {
-    transform: rotate(180deg);
+  .category img {
+    height: 16px;
+    width: 16px;
+    top: 16px;
+    right: 20px;
   }
-  @media only screen and (max-width: 1024px) {
-    .about-table {
-      height: auto; /* ajustez la hauteur selon vos besoins */
-    }
-  
-    .category h2 {
-      font-size: 20px; /* ajustez la taille de la police selon vos besoins */
-    }
-  
-    .category p {
-      padding-bottom: 60px; /* ajustez l'espacement en bas selon vos besoins */
-    }
-  
-    .category img {
-      height: 16px; /* ajustez la taille de l'image selon vos besoins */
-      width: 16px;
-      top: 16px; /* ajustez la position de l'image selon vos besoins */
-      right: 20px;
-    }
-  }
+}

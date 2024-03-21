@@ -1,12 +1,21 @@
 .rating{
     position: relative;
-    left:75%;
+    left:80%;
     height: 36px;
     bottom:40px;
     padding-top: 20px;
     
 }
+@media only screen and (min-width:480px) and (max-width: 768px){
 
+    .rating{
+        position: relative;
+        left:65%;
+        
+    }
+
+
+}
 @media only screen and (min-width: 320px) and (max-width: 480px){
  div.rating{
     position: relative;
