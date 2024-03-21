@@ -35,14 +35,14 @@ div.collapse-block-equipement {
     top: -5px;
     left: 30px;
     font-size: 22px;
-    color: white;
+    color:white;
     img.vector {
       position: relative;
-
       width: 24px;
       height: 20px;
       transition: transform 0.3s ease;
       margin-right: 15px;
+      
     }
   }
 }
@@ -57,7 +57,7 @@ div.collapse-block {
 
   h1 {
     position: relative;
-    top: -5px;
+top: 0;
     left: 30px;
     font-size: 22px;
     color: white;
@@ -107,7 +107,7 @@ div.collapse-block {
   height: 20px;
   transition: transform 0.3s ease;
   margin-right: 15px;
-  background-color: #ff6060;
+
 }
 @keyframes show-up {
   0% {
@@ -120,19 +120,7 @@ div.collapse-block {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .collapse-block-equipement, .collapse-block {
-    height: auto;
-  }
 
-  .collapse-block-equipement h1, .collapse-block h1 {
-    left: 20px;
-  }
-
-  .texte {
-    width: 90%;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .block {
@@ -141,13 +129,68 @@ div.collapse-block {
 
   .collapse-block-equipement, .collapse-block {
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    height: auto;
+   text-align: center;
+    
   }
 
   .collapse-block-equipement h1, .collapse-block h1 {
     left: 20px;
     margin-bottom: 5px;
   }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .block{
+    display: block;
+    gap: 0;
+    padding-left: 10px;
+  }
+  div.collapse-block-equipement {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+   
+  
+    
+    .vector {
+  position: relative;
+bottom: 25px;
+height:14px ;
+width: 16px;
+padding-bottom: 5px;
+left: 170px;
+}
+
+  }
+
+div.collapse-block {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+ 
+  h1 {
+    position: absolute;
+    top:640px ;
+    left: 12%;
+    font-size: 13px;
+    color: white;
+    height: 30px;
+  }
+.vector{
+  position: relative;
+  height: 9px;
+  width: 16px;
+  right: 5px;
+}
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; 
+   height: 30px;
+  }
+}
 }

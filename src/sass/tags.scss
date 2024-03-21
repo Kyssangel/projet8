@@ -35,3 +35,9 @@ font-size: 14px;
             font-size: 12px; /* Réduire la taille de la police des tags */
           }
         }
+        @media only screen and (min-width: 320px) and (max-width: 480px){
+          .tags{
+               position: relative;
+               bottom:10px;
+          }
+        }

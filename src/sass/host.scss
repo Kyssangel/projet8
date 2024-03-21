@@ -1,52 +1,71 @@
 // Style pour la classe .host
 .host {
-    display: flex;
-    justify-content: flex-end;
-  position: relative;
-  bottom: 110px;
-
+  display: flex;
   
-  p.fullname{
-    padding: 0;
-color:#ff6060 ;
-flex-direction: column;
-
  
+
+  p.fullname {
+    padding: 0;
+    color: #ff6060;
+    flex-direction: column;
   }
-.host__name{
+  .host__name {
+    width: 70px;
+  }
 
-  width:70px;
-
+  .host__picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
 }
-  
-   &__picture {
-   
-      border-radius: 50%;
-      height: 64px;
-      width: 64px;
+figure.host{
+  position: relative;
+left: 80%;
+  width: 150px;
+bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .host {
+    justify-content: center; /* Centrer le contenu sur les appareils plus petits */
+    text-align: center; /* Centrer le texte */
+    bottom: 50px; /* Ajuster la position verticale */
+  }
 
-      
-    }
+  .host .fullname {
+    margin-left: 10px; /* Ajouter une marge à gauche pour l'espace */
+    flex-direction: row; /* Afficher le texte à côté de l'image */
+    align-items: center; /* Centrer verticalement le texte à côté de l'image */
   }
-  @media only screen and (max-width: 768px) {
-    .host {
-      justify-content: center; /* Centrer le contenu sur les appareils plus petits */
-      text-align: center; /* Centrer le texte */
-      bottom: 50px; /* Ajuster la position verticale */
-    }
-  
-    .host .fullname {
-      margin-left: 10px; /* Ajouter une marge à gauche pour l'espace */
-      flex-direction: row; /* Afficher le texte à côté de l'image */
-      align-items: center; /* Centrer verticalement le texte à côté de l'image */
-    }
-  
-    .host .host__name {
-      width: auto; /* Rétablir la largeur automatique */
-      margin-right: 10px; /* Ajouter une marge à droite pour l'espace */
-    }
-  
-    .host .host__picture {
-      margin-right: 10px; /* Ajouter une marge à droite pour l'espace */
-    }
+
+  .host .host__name {
+    width: auto; /* Rétablir la largeur automatique */
+    margin-right: 10px; /* Ajouter une marge à droite pour l'espace */
   }
+
+  .host .host__picture {
+    margin-right: 10px; /* Ajouter une marge à droite pour l'espace */
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  figure.host {
+    position: relative;
+    top: 25px;
+    left: 55%;
+    height: 33px;
+    width: 135px;
+  }
+  .host__picture {
+    height: 33px;
+    width: 33px;
+  }
+  .fullname {
+    position: relative;
+    bottom: 14px;
+    height: 33px;
+    width: 60px;
+    font-size: 12px;
+  }
+}
+

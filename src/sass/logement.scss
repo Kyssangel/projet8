@@ -1,7 +1,7 @@
 .logement {
   padding-left: 80px;
   padding-right: 80px;
- 
+
   .allDescription {
     h2.title {
       color: #ff6060;
@@ -15,9 +15,9 @@
       color: black;
       font-size: 18px;
       font-weight: 500;
-     margin-top: 15px;
+      margin-top: 15px;
       padding-bottom: 40px;
-      padding-top: 10px;
+      padding-top: 30px;
     }
   }
 
@@ -36,8 +36,8 @@
 }
 @media only screen and (max-width: 768px) {
   .logement {
-    padding-left: 20px; /* Réduire le padding à gauche pour les appareils plus petits */
-    padding-right: 20px; /* Réduire le padding à droite pour les appareils plus petits */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .logement .allDescription h2.title {
@@ -50,5 +50,24 @@
 
   .logement .pictures img {
     height: 200px; /* Réduire la hauteur des images pour les tablettes et les appareils portables */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logement {
+    padding-right: 10px;
+  }
+  .logement .allDescription h2.title {
+    position: relative;
+    bottom: 25px;
+    height: 18px;
+    font-size: 18px;
+    padding-top: 0;
+
+    .logement .allDescription p {
+      position: relative;
+      bottom: 20px;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
   }
 }

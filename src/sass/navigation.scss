@@ -33,10 +33,10 @@ nav ul li a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .header {
+  header.header {
     padding-left: 10px;
     padding-right: 10px; 
-    justify-content: center;
+  
     
     img{
       height: 46px;

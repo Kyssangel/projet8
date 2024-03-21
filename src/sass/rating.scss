@@ -1,8 +1,8 @@
 .rating{
     position: relative;
-    left:85%;
+    left:75%;
     height: 36px;
-    bottom: 110px;
+    bottom:40px;
     padding-top: 20px;
     
 }
@@ -14,5 +14,16 @@
         text-align: center; /* Centrer le contenu horizontalement */
         bottom: auto; /* Réinitialiser la position verticale */
         padding-top: 10px; /* Réduire l'espace en haut */
+    }
+}
+@media only screen and (max-width: 480px){
+    .rating{
+        padding-top: 0;
+        padding-bottom:40px;
+        height: 18px;
+        width: 98px;
+        img.rating__icon{
+            height: 18px;
+        }
     }
 }
