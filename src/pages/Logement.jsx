@@ -12,10 +12,10 @@ import Tags from"./Tags";
 export default function Logement() {
   const { id } = useParams();
 
-  // Find the logement with the provided ID
+  
   const logement = logements.find((item) => item.id === id);
 
-  // Check if the logement with the provided ID exists
+  
   if (!logement) {
     return <div>Logement introuvable</div>;
   }
