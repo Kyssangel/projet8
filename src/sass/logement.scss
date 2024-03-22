@@ -5,19 +5,19 @@
   .allDescription {
     h2.title {
       color: #ff6060;
-      padding-top: 20px;
       font-size: 36px;
-
+margin-top: -70px;
       height: 51px;
+ 
     }
 
     p {
       color: black;
       font-size: 18px;
       font-weight: 500;
-      margin-top: 15px;
-      padding-bottom: 40px;
-      padding-top: 30px;
+      margin-top: 10px;
+      padding-bottom: 25px;
+      padding-top: 20px;
     }
   }
 
@@ -42,6 +42,7 @@
 
   .logement .allDescription h2.title {
     font-size: 24px; 
+    margin-top: -40px;
   }
 
   .logement .allDescription p {
@@ -65,5 +66,8 @@
     padding-top: 5px;
     padding-bottom: 10px;
   }
-
+ .allDescription h2.title{
+ margin: -10;
+ font-size: 18px;
+  }
 }

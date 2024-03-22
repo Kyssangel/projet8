@@ -56,10 +56,10 @@ bottom: 50px;
     position: relative;
    text-align: center;
     top: 25px;
-    left:60%;
+    left:50%;
     height: 33px;
     width: 135px;
- 
+ justify-content: end;
   .host__picture {
     height: 33px;
     width: 33px;
@@ -67,7 +67,6 @@ bottom: 50px;
    
   .fullname {
     position: relative;
-    
     bottom: 14px;
     height: 33px;
     width: 50px;
