@@ -13,6 +13,7 @@
     height:240px;
     object-fit: cover;
     border-radius:10px;
+    
   }
 }
 h3 {
@@ -27,11 +28,18 @@ h3 {
 }
 @media only screen and (max-width: 768px) {
   .thumb {
-    height: 200px; 
-  }
+    height:90%; 
+   border-radius: 10px;
+    width: 100%;
+  
 
   h3 {
     font-size: 14px; 
-    bottom: 2%; 
+  top: 90%;
+  }
+  img{
+  width: 100%;
+    border-radius: 10px;
+  }
   }
 }

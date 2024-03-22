@@ -1,17 +1,14 @@
-
 ////
 .nav ul li a {
   color: black;
-  
   width: 100%;
- 
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
- padding-top: 20px;
- padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -36,10 +33,10 @@
   color: red;
   border-bottom: 2px solid red;
 }
-li a{
+li a {
   font-size: 24px;
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   header.header {
