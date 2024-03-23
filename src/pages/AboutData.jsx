@@ -1,56 +1,43 @@
-import{ useState } from "react";
-import Vector from "../assets/images/ChevronUp.png";
-import aboutData from "../../public/aboutData";
 
-const AboutTable = () => {
-  const [collapsedSections, setCollapsedSections] = useState({
-    slogan: true,
-    fiability: true,
-    respect: true,
-    service: true,
-    security: true
-  });
+import { useState } from "react";
+import ChevronUp from "../assets/images/ChevronUp.png"; 
 
-  const toggleCollapse = section => {
-    setCollapsedSections(prevState => ({
-      ...prevState,
-      [section]: !prevState[section]
-    }));
-  };
+function AccordionItem({ title, content }) {
+  const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="about-table">
-     
-      <div className="category">
-        <h2 onClick={() => toggleCollapse("fiability")}>Fiabilité</h2>
-        {!collapsedSections["fiability"] && <p>{aboutData.fiability}</p>}
-        <button className="button" onClick={() => toggleCollapse("fiability")}>
-          <img src={Vector} alt="chevron" style={{ transform: collapsedSections["fiability"] ? "rotate(0deg)" : "rotate(180deg)" }} />
-        </button>
-      </div>
-      <div className="category">
-        <h2 onClick={() => toggleCollapse("respect")}>Respect</h2>
-        {!collapsedSections["respect"] && <p>{aboutData.respect}</p>}
-        <button className="button" onClick={() => toggleCollapse("respect")}>
-          <img src={Vector} alt="chevron" style={{ transform: collapsedSections["respect"] ? "rotate(0deg)" : "rotate(180deg)" }} />
-        </button>
-      </div>
-      <div className="category">
-        <h2 onClick={() => toggleCollapse("service")}>Service</h2>
-        {!collapsedSections["service"] && <p>{aboutData.service}</p>}
-        <button className="button" onClick={() => toggleCollapse("service")}>
-          <img src={Vector} alt="chevron" style={{ transform: collapsedSections["service"] ? "rotate(0deg)" : "rotate(180deg)" }} />
-        </button>
-      </div>
-      <div className="category">
-        <h2 onClick={() => toggleCollapse("security")}>Securité</h2>
-        {!collapsedSections["security"] && <p>{aboutData.security}</p>}
-        <button className="button" onClick={() => toggleCollapse("security")}>
-          <img src={Vector} alt="chevron" style={{ transform: collapsedSections["security"] ? "rotate(0deg)" : "rotate(180deg)" }} />
-        </button>
-      </div>
+    <div className="accordion-item">
+      <h2 className="accordion-header" onClick={() => setIsActive(!isActive)}>
+        {title}
+        <img src={ChevronUp} alt="Arrow" className={`arrow ${isActive ? "up" : "down"}`} />
+      </h2>
+      {isActive && <div className="accordion-content">{content}</div>}
     </div>
   );
-};
-export default AboutTable;
+}
+
+export default function Accordion() {
+  return (
+    <div className="accordion">
+      <AccordionItem
+        title="fiabilité:"
+        content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+      />
+      <AccordionItem
+        title="respect:"
+        content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+      />
+      <AccordionItem
+        title="service:"
+        content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+      />
+      <AccordionItem
+        title="sécurité:"
+        content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+      />
+    </div>
+  );
+}
+
+
 

@@ -1,89 +1,62 @@
-.about-table {
-  height: 450px;
-  .category {
-    padding-top: 20px;
-    margin-bottom: 40px;
-    height: 54px;
-
-    h2 {
-      flex-direction: row-reverse;
-      margin: 0;
-      width: 100%;
-      cursor: pointer;
-      background-color: #ff6060;
-      color: white;
-      padding-left: 10px;
-      font-size: 24px;
-      height: 52px;
-      border-radius: 5px;
-      padding-top: 10px;
-    }
-
-    p {
-      margin: 0;
-      padding-left: 20px;
-      height: 45px;
-      background: #f6f6f673;
-
-      padding-bottom: 80px;
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-      }
-    }
-
-    img {
-      position: relative;
-      top: 20px;
-      height: 20px;
-      width: 20px;
-      transition: transform 0.3s ease;
-      color: white;
-      right: 40px;
-    }
-    .button {
-      background-color: transparent;
-      border: transparent;
-    }
-  }
-}
-.category {
-  position: relative;
-}
-.category button {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+div.accordion {
+ padding-top: 30px;
+ width: 80%;
+  overflow: hidden;
+justify-content: center;
+ padding-left: 20%;
 }
 
-.category button img {
+.accordion-item {
+ padding-bottom:20px;
+justify-content: center;
+}
+
+.accordion-header {
+  background: #FF6060;
+ border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 10px;
+  background: #F6F6F673;
+border: none;
+}
+
+.arrow {
+
+  margin-left: auto;
   transition: transform 0.3s ease;
 }
 
-.collapsed {
+.arrow.up {
   transform: rotate(180deg);
+    height:52px ;
+ 
 }
-
-@media only screen and (max-width: 1024px) {
-  .about-table {
-    height: auto;
-  }
-
-  .category h2 {
-    font-size: 20px;
-  }
-
-  .category p {
-    padding-bottom: 60px;
-  }
-  .category img {
-    height: 16px;
-    width: 16px;
-    top: 16px;
-    right: 20px;
-  }
+img.arrow.down{
+  width:24px ;
+  height: 13px;
+  border-radius: 5px;
 }
-//////
+   img.arrow.up{
+ width:24px ;
+ height: 13px;
+   object-fit: cover;
+    }
+
+    @media only screen and (max-width: 480px) {
+      div.accordion{
+padding: 0;
+width: 100%;
+padding-top: 10px;
+      }
+
+    }
+
+
