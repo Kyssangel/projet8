@@ -11,7 +11,7 @@ export default function Carousel({ logementId }) {
 
     useEffect(() => {
         setLogement(findLogementByID(logementId));
-        setIndex(0); // Réinitialiser l'index lorsque logementId change
+        setIndex(0); 
     }, [logementId]);
 
     useEffect(() => {
@@ -20,10 +20,10 @@ export default function Carousel({ logementId }) {
             if (index < 0) setIndex(totalPictures);
             if (index > totalPictures) setIndex(0);
         }
-    }, [index, logement, logementId]); // Ajout de logementId dans les dépendances
+    }, [index, logement, logementId]); 
 
     if (!logement) {
-        return null; // Gérer le cas où le logement n'est pas encore chargé
+        return null; 
     }
 
     const nextSlide = () => {

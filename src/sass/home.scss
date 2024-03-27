@@ -14,11 +14,15 @@ padding-right: 80px;
       height: 223px;
       object-fit: cover;
       border-radius: 25px;
-      opacity: 60%;
+      opacity: 25%;
     }
   }
 }
+h1 br{
+  display: none;
+}
 h1 {
+  
   position: absolute;
   display: flex;
   color: white;
@@ -60,11 +64,18 @@ padding-bottom: 40px;
   .home .banner img {
     height: 150px; 
   }
-
+h1 br{
+  display: inline;
+}
   h1 {
-    font-size: 36px; 
+   
+font-weight: 700;
+    
+width: 225px;
+height: 48px;
     top: 25%; 
     left: 10%; 
+    font-size: 24px;
   }
 
   .home .galerie {

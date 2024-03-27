@@ -10,7 +10,7 @@ export default function Home() {
         <div className="home">
             <div className="banner">
             <img src={falaise} alt="Image d'une falaise" />
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1>Chez vous, <br/>partout et ailleurs</h1>
             </div>
             <div className="galerie">
                 <Thumb logements={logements} />
