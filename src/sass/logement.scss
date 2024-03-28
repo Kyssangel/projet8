@@ -1,73 +1,72 @@
+/////
+
 .logement {
   padding-left: 80px;
   padding-right: 80px;
-
-  .allDescription {
-
- 
-    .title {
-      color: #ff6060;
-      font-size: 36px;
- height: 51px;
-  }
-
-    p {
-      color: black;
-      font-size: 18px;
-      font-weight: 500;
-      margin-top: 10px;
-      padding-bottom: 25px;
-      padding-top: 20px;
-    }
-  }
-
-  .pictures {
-    border-radius: 25px;
-
-    img {
-      position: relative;
-      height: 415px;
-      width: 100%;
-      border-radius: 25px;
-      object-fit: cover;
-      font-size: 3rem;
-    }
-  }
 }
+
+.logement .allDescription .title {
+  color: #ff6060;
+  font-size: 36px;
+  height: 51px;
+}
+
+.logement .allDescription p {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.logement .pictures {
+  border-radius: 25px;
+}
+
+.logement .pictures img {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  font-size: 3rem;
+}
+
 @media only screen and (max-width: 768px) {
   .logement {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .logement .allDescription h2.title {
-    font-size: 24px; 
-  
+  .logement .allDescription .title {
+    font-size: 24px;
   }
 
   .logement .allDescription p {
-    font-size: 16px; 
-margin-top: 0;
-  
+    font-size: 16px;
+    margin-top: 0;
   }
 
   .logement .pictures img {
-    height: 200px; 
+    height: 200px;
   }
 }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .logement {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .logement .allDescription p {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 0;
-    padding-top: 5px;
     padding-bottom: 10px;
+    height: 35px;
   }
- .allDescription h2.title{
- margin: -10;
- font-size: 18px;
+
+  .logement .allDescription .title {
+    font-size: 18px;
+    height: 57px;
   }
 }

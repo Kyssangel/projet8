@@ -1,14 +1,16 @@
 // Style pour la classe .host
 .host {
   display: flex;
-
+align-items: center;
+gap: 10px;
   p.fullname {
     padding: 0;
     color: #ff6060;
-    flex-direction: column;
+    
   }
   .host__name {
-    width: 70px;
+    width: 60px;
+   
   }
 
   .host__picture {
@@ -49,14 +51,16 @@ figure.host {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+ 
   figure.host {
     position: relative;
     text-align: center;
+  
     top: 25px;
-    left: 50%;
+    left: 65%;
     height: 33px;
     width: 135px;
-    justify-content: end;
+    gap: 0;
     .host__picture {
       position: relative;
       height: 33px;
@@ -72,4 +76,5 @@ figure.host {
       font-size: 12px;
     }
   }
+
 }

@@ -69,7 +69,7 @@ export default function Carousel({ logementId }) {
     if (!logement) return null;
 
     return (
-        <div style={{ position: 'relative', display: 'inline-block' }}>
+        <div className='containerImg'>
             <img
                 src={logement.pictures[index]}
                 className="classImage"

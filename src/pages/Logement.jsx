@@ -26,12 +26,13 @@ export default function Logement() {
       <div className="allDescription">
         <h2 className="title">{logement.title}</h2>
         <p>{logement.location}</p>
+        </div>
         <Tags tags={logement.tags} />
         <Host host={logement.host} />
         <Rating rating={logement.rating} />
         <Collapse title="Rating" id={id} />
       
-      </div>
+      
     </div>
   );
 }
