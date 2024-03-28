@@ -7,7 +7,7 @@ import Caroussel from "./Caroussel";
 import Collapse from "./Collapse";
 import Host from "./Host";
 import Tags from"./Tags";
-
+import ErrorComponent from "./ErrorComponent.jsx";
 
 export default function Logement() {
   const { id } = useParams();
@@ -17,7 +17,7 @@ export default function Logement() {
 
   
   if (!logement) {
-    return <div>Logement introuvable</div>;
+    return <div><ErrorComponent /></div>;
   }
 
   return (
