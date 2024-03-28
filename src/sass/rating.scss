@@ -6,12 +6,12 @@
     padding-top: 20px;
     width: 200px;
 }
-@media only screen and (min-width:480px) and (max-width: 768px){
+@media only screen  and (max-width: 768px){
 
     .rating{
         position: relative;
-        left:65%;
-        
+        left:64%;
+       width: 180px;
     }
 
 
