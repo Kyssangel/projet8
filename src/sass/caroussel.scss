@@ -1,93 +1,52 @@
 
 
-.classImage {
-  width: 100%;
-  height: 415px;
- 
+img.classImage {
+  width:100%;
+  height: 100%; 
   object-fit: cover;
+position: relative;
 }
 
 .classChevronGauche {
-  position: relative;
-  bottom: 250px;
-  left: 25px;
+  position: absolute; 
+
+  left:10px;
   color: white;
   cursor: pointer;
+  transform: translateY(-50%); 
 }
+
 
 .classChevronDroit {
-  position: relative;
-  bottom: 260px;
-  left: 88%;
+  position: absolute; 
+
+  right:10px; 
+  color: white;
   cursor: pointer;
+  transform: translateY(-50%); 
 }
+
 
 .compteurImages {
-  position: absolute;
+  position: relative; 
   text-align: center;
-  margin-top: 10px;
-  font-size: 20px;
+ font-size: 20px;
   color: white;
-  left: 50%;
-  width: 40px;
+  transform: translateX(-50%);
+padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 2500px) {
-  .compteurImages {
-    position: relative;
-    bottom: 190px;
-  }
-}
-@media only screen and (max-width: 1024px){
-  img.classChevronDroit {
-    position: relative;
-left: 84%;
 
-
-  }
-
-
-}
-@media only screen and (max-width: 768px) {
-  img.classChevronDroit {
-    position: relative;
-left: 82%;
-
-
-  }
-}
-@media only screen and (max-width: 600px) {
-  img.classChevronDroit {
-    position: relative;
-left: 76%;
-
-
-  }
-}
 @media only screen and (max-width: 425px) {
   .classImage {
-    width: 100%;
-    height: 250px;
+    height: 250px; 
   }
-  .classChevronGauche {
-    position: relative;
-    left: 5%;
-    bottom: 150px;
-    height: 19px;
-    width: 16px;
-  }
-
-  img.classChevronDroit {
-    position: relative;
-    bottom: 150px;
-    height: 19px;
-    width: 16px;
-  left: 85%;
-  }
-
-  .compteurImages {
-    position: relative;
-    bottom: 90px;
-   font-size: 16px;
+  .classChevronGauche,
+  .classChevronDroit {
+    width: 16px; 
+ }
+ .compteurImages {
+  
+    font-size: 16px;
   }
 }

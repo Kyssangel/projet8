@@ -9,7 +9,7 @@ export default function Home() {
     <div className="home">
       <div className="banner">
         <img src={falaise} alt="Image d'une falaise" />
-        <h1>
+        <h1 className="text">
           Chez vous, <br />
           partout et ailleurs
         </h1>

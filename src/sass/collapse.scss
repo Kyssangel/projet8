@@ -1,10 +1,12 @@
 .block2 {
   padding-bottom: 30px;
+
   .button {
     background-color: transparent;
     border: transparent;
   }
 }
+
 .block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -34,6 +36,7 @@ div.collapse-block-equipement {
     left: 30px;
     font-size: 22px;
     color: white;
+
     img.vector {
       position: relative;
       width: 24px;
@@ -43,6 +46,7 @@ div.collapse-block-equipement {
     }
   }
 }
+
 div.collapse-block {
   display: flex;
   align-items: center;
@@ -104,11 +108,13 @@ div.collapse-block {
   transition: transform 0.3s ease;
   margin-right: 15px;
 }
+
 @keyframes show-up {
   0% {
     transform: translateY(30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -121,23 +127,23 @@ div.collapse-block {
     gap: 0;
     padding-left: 10px;
   }
+
   div.collapse-block-equipement {
     display: flex;
     align-items: center;
     cursor: pointer;
-height: 30px;
-h1{
-  font-size: 13px;
-  top: 15px;
+    height: 30px;
 
-  
-}
+    h1 {
+      font-size: 13px;
+     }
+
     .vector {
       position: relative;
-     height: 14px;
+      height: 14px;
       width: 16px;
       padding-bottom: 5px;
-   
+
     }
   }
 
@@ -146,20 +152,23 @@ h1{
     align-items: center;
     cursor: pointer;
     height: 30px;
+
     h1 {
       position: relative;
-    left: 9%;
-    top: 5px;
+      left: 9%;
+      top: 5px;
       font-size: 13px;
       color: white;
       height: 30px;
     }
+
     .vector {
       position: relative;
       height: 9px;
       width: 16px;
-     
+
     }
+
     button {
       background: none;
       border: none;

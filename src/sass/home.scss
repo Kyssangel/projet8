@@ -1,53 +1,64 @@
+
+///////
+
 .home {
   padding-left: 80px;
   padding-right: 80px;
-
-  .banner {
-    position: relative;
-    background-color: black;
-    height: 223px;
-    display: flex;
-    border-radius: 25px;
-    justify-content: center;
-    img {
-      width: 100%;
-      height: 223px;
-      object-fit: cover;
-      border-radius: 25px;
-      opacity: 25%;
-    }
-    h1 {
-      position: absolute;
-
-      color: white;
-      height: 68px;
-      top: 35%;
-      align-items: center;
-      font-size: 48px;
-    }
-  }
-
-  h1 br {
-    display: none;
-  }
 }
-.galerie {
+
+.home .banner {
+  position: relative;
+  background-color: black;
+  height: 223px;
+  display: flex;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.home .banner img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  opacity: 0.25; /* Correction de la propriété d'opacité */
+}
+
+.home .banner h1 {
+  position: absolute;
+  color: white;
+  height: 68px;
+  top: 50%; /* Ajustement de la position verticale */
+  transform: translateY(-50%); /* Centrage vertical */
+  align-items: center;
+  font-size: 48px;
+}
+
+.home .banner h1 br {
+  display: none;
+}
+
+.galerie {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 25px;
-  gap: 40px;
+  gap: 30px;
   padding-top: 50px;
   background: #f6f6f6;
   margin-top: 30px;
   border-radius: 25px;
   padding-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
+
 @media only screen and (max-width: 768px) {
   .home .galerie {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .home .banner h1.text{
+    font-size: 30px;
+    
   }
 }
 
@@ -59,17 +70,17 @@
   .home .banner img {
     height: 150px;
   }
-  h1 br {
+
+  .home .banner h1 br {
     display: inline;
   }
-  h1 {
-    font-weight: 700;
 
-    width: 225px;
-    height: 48px;
-    top: 30%;
-    left: 10%;
+  .home .banner h1.text {
+    position: absolute;
+    font-weight: 700;
+    display: flex;
     font-size: 24px;
+    left: 5%;
   }
 
   .home .galerie {
@@ -82,8 +93,7 @@
   .home {
     padding-left: 10px;
     padding-right: 10px;
-    img {
-      padding-right: 0;
-    }
   }
 }
+
+
