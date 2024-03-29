@@ -19,9 +19,10 @@ font-size: 14px;
    
       }
     
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 900px) {
           .tags {
             flex-wrap: wrap; 
+           width: 300px;
           }
         
           .tags .tag {
