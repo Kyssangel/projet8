@@ -10,12 +10,21 @@
   .rating {
     position: relative;
     left: 85%;
+    bottom: 70px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .rating {
+    position: relative;
+    left: 79%;
+    bottom: 70px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 900px) {
   .rating {
     position: relative;
     left: 73%;
+    bottom: 70px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -23,6 +32,7 @@
     position: relative;
     left: 61%;
     width: 180px;
+    bottom: 65px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
