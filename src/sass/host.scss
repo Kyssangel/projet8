@@ -25,11 +25,18 @@ figure.host {
   width: 150px;
   bottom: 50px;
 }
+@media only screen  and (min-width: 1200px){
+  figure.host {
+    position: relative;
+   left: 88%;
+
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 900px){
   figure.host {
     position: relative;
-   bottom: 50px;
-    left: 80%;
+   left: 80%;
 
   }
 }
@@ -37,10 +44,8 @@ figure.host {
 @media only screen and (min-width: 600px) and (max-width: 768px){
   figure.host {
     position: relative;
-   bottom: 50px;
-    left: 70%;
-
-  }
+  left: 70%;
+ }
 }
 
 
