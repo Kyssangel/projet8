@@ -28,7 +28,7 @@ export default function Logement() {
         <p>{logement.location}</p>
         </div>
         <Tags tags={logement.tags} />
-        <Host host={logement.host} />
+      <Host host={logement.host} />
         <Rating rating={logement.rating} />
         <Collapse title="Rating" id={id} />
       

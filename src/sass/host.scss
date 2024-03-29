@@ -25,13 +25,33 @@ figure.host {
   width: 150px;
   bottom: 50px;
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 900px){
+  figure.host {
+    position: relative;
+   bottom: 50px;
+    left: 80%;
+
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  figure.host {
+    position: relative;
+   bottom: 50px;
+    left: 70%;
+
+  }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
   figure.host {
     position: relative;
     justify-content: center;
     text-align: center;
     bottom: 50px;
-    left: 70%;
+    left: 65%;
+
   }
 
   .host .fullname {
@@ -56,16 +76,16 @@ figure.host {
     position: relative;
     text-align: center;
   
-    top: 25px;
-    left: 65%;
+    top: 32px;
+    left: 63%;
     height: 33px;
-    width: 135px;
+    width: 100px;
     gap: 0;
     .host__picture {
       position: relative;
       height: 33px;
       width: 33px;
-      bottom: 10px;
+      bottom: 17px;
     }
 
     .fullname {
